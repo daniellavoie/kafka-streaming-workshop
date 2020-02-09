@@ -59,18 +59,9 @@ public class TransactionTransformer implements ValueTransformer<Transaction, Tra
 
 	@Override
 	public TransactionResult transform(Transaction transaction) {
-		if (transaction.getType().equals(Transaction.Type.DEPOSIT)) {
-			return new TransactionResult(transaction, depositFunds(transaction), true, null);
-		}
-
-		if (hasEnoughFunds(transaction)) {
-			return new TransactionResult(transaction, withdrawFunds(transaction), true, null);
-		}
-
-		LOGGER.info("Not enough funds for account {}.", transaction.getAccount());
-
-		return new TransactionResult(transaction, getFunds(transaction.getAccount()), false,
-				TransactionResult.ErrorType.INSUFFICIENT_FUNDS);
+		// TODO - Implement business logic to process transactions.
+		
+		return null;
 	}
 
 	private Funds updateFunds(String account, BigDecimal amount) {
