@@ -81,25 +81,7 @@ public class KStreamConfig {
 	}
 	
 	private void defineStreams(StreamsBuilder streamsBuilder) {
-		KStream<String, Transaction> transactionStream = streamsBuilder
-				.stream(transactionRequestConfiguration.getName());
-		
-
-		KStream<String, TransactionResult> resultStream = transactionStream
-
-				.transformValues(this::transactionTransformer, fundsStoreConfiguration.getName());
-
-		resultStream
-
-				.filter(this::success)
-
-				.to(transactionSuccessConfiguration.getName());
-
-		resultStream
-
-				.filterNot(this::success)
-
-				.to(transactionFailedConfiguration.getName());
+		// TODO - Implement Stream definition
 	}
 
 	private boolean success(String account, TransactionResult result) {
