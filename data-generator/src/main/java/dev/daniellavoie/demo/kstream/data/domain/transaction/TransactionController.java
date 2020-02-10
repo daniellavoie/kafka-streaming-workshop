@@ -17,7 +17,7 @@ public class TransactionController {
 	}
 
 	@PostMapping
-	public Mono<Void> publishTransaction(@RequestBody Transaction transaction) {
-		return transactionService.publishTransaction(transaction);
+	public Mono<Void> publishTransaction(@RequestBody TransactionRequest transactionRequest) {
+		return transactionService.publishTransaction(transactionRequest);
 	}
 }
