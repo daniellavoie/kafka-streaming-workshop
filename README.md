@@ -4,16 +4,19 @@
 
 Make sure you have the following toolset installed on your compute.
 
-* [git](https://git-scm.com/)
-* A bash based environment (eg: [cygwin](https://www.cygwin.com/) or [gitbash for Windows]((https://git-scm.com/)))
-* Docker ([linux](https://docs.docker.com/install/), [macos](https://docs.docker.com/docker-for-mac/install/) or [Windows](https://docs.docker.com/docker-for-windows/install/))
+* Docker
+  * [Windows 10 Pro or Enterprise](https://docs.docker.com/docker-for-windows/install/)
+  * [Windows 10 Home, 8 or 7](https://github.com/docker/toolbox/releases/download/v19.03.1/DockerToolbox-19.03.1.exe)
+  * [MacOS](https://docs.docker.com/docker-for-mac/install/)
 * Docker Compose (installed with Docker Desktop)
-* Java 8 (or later)
-* Your favorite Java IDE
+* git (Installed with Docker Desktop or Docker Toolbox)
+* A bash based environment (git bash is installed with Docker Desktop or Docker Toolbox)
+* [Java 8 (or later)](https://adoptopenjdk.net/?variant=openjdk11&jvmVariant=hotspot)
+* Your favorite Java IDE ([Eclipse](https://www.eclipse.org/downloads/packages/release/2019-12/r/eclipse-ide-enterprise-java-developers) or [IntelJ IDEA](https://www.jetbrains.com/idea/))
 
 ## Note for running this workshop with Windows
 
-This workshop is compatible with Windows. Just ensure you have git bash or cygwin installed on your machine. Docker Desktop for Windows is also a requirement.
+This workshop is compatible with Windows. Just ensure you have Docker Toolbox or Docker Desktop installed.
 
 ## Skip writing code and just write the demo
 
