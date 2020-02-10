@@ -14,9 +14,11 @@ Make sure you have the following toolset installed on your compute.
 * [Java 8 (or later)](https://adoptopenjdk.net/?variant=openjdk11&jvmVariant=hotspot)
 * Your favorite Java IDE ([Eclipse](https://www.eclipse.org/downloads/packages/release/2019-12/r/eclipse-ide-enterprise-java-developers) or [IntelJ IDEA](https://www.jetbrains.com/idea/))
 
-## Note for running this workshop with Windows
+## Important notes for running this workshop with Windows
 
-This workshop is compatible with Windows. Just ensure you have Docker Toolbox or Docker Desktop installed.
+This workshop is compatible with Windows. Just ensure you have Docker Toolbox or Docker Desktop installed. If you are running with Docker Toolbox, follow the instructions very very carefully as you need to configure your Virtual Box Docker VM with some specific port redirection as well as enough memory to run the workshop properly.
+
+[Docker Toolbox configuration prerequisites](doc/docker-toolbox/docker-toolbox.md)
 
 ## Skip writing code and just write the demo
 
