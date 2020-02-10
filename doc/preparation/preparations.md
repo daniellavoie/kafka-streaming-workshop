@@ -1,4 +1,4 @@
-# [Main](../../README.md) / Workshop preperation
+# [Main](../../README.md) / Workshop preparation
 
 ## Clone the repository
 
@@ -14,7 +14,7 @@ cd kafka-streaming-workshop
 
 ## Run the docker compose stack
 
-All the infrastructure required for this demo runs as a Docker Compose Stack. A simple `docker-compose` command will setup the entire infrastructure required for our testing. Run the following command:
+All the infrastructure required for this demo runs as a Docker Compose Stack. A simple `docker-compose` command will set up the entire infrastructure required for our testing. Run the following command:
 
 ```
 docker-compose -f docker-compose/local/docker-compose.yml up -d
@@ -28,7 +28,7 @@ Run the following command to access the logs from Control Center. It might take 
 docker logs -f kstreams-demo-control-center
 ```
 
-After running the `docker logs` command, stay alert for a mention that the Jetty is started. Logs can be very verbose, so it is easy to miss it. If you've been patient enough, you can just skip this part and access Conlfuent Control Center from http://localhost:9021.
+After running the `docker logs` command, stay alert for a mention that the Jetty is started. Logs can be very verbose, so it is easy to miss it. If you've been patient enough, you can just skip this part and access Confluent Control Center from http://localhost:9021.
 
 ```
 [2020-02-08 14:44:15,059] INFO Started o.e.j.s.ServletContextHandler@7a93b263{/ws,null,AVAILABLE} (org.eclipse.jetty.server.handler.ContextHandler)

@@ -2,9 +2,9 @@
 
 To leverage the full power of stream processing, it is a good practice to pre-load the required data in topics. Kafka Streams and ksqlDB will allow you to join and lookup data from your events with any other topic. 
 
-In this section of the workshop, we will setup a Kafka Connect JDBC Source connector instance that will synchronize any data from a PostgreSQL instance to an account topic in Kafka. 
+In this section of the workshop, we will set up a Kafka Connect JDBC Source connector instance that will synchronize any data from a PostgreSQL instance to an `account` topic in Kafka. 
 
-This exercice simulates a Change Data Capture pattern where we bridge an existing relation datasource to Kafka in realtime.
+This exercise simulates a Change Data Capture pattern where we bridge an existing data source to Kafka in realtime.
 
 ![JDBC Source Connector](jdbc-source-connector.png)
 
@@ -50,9 +50,9 @@ After the data set is completely generated, you should observe an output mention
 
 Access Control Center from http://localhost:9021.
 
-From the main screen, access the topic view with the following links : `Cluster 1 / Topics`.
+From the main screen, access the topic view with the following links: `Cluster 1 / Topics`.
 
-Click on the the `account` topic and access the `messages` tab. Click on the `offset` textbox and type `0` and press enter to instruct C3 to load all messages from partition 0 starting from offset 0.
+Click on the `account` topic and access the `messages` tab. Click on the `offset` textbox and type `0` and press enter to instruct C3 to load all messages from partition 0 starting from offset 0.
 
 With the connector running, you should observe `account` events in the UI.
 
@@ -60,4 +60,4 @@ With the connector running, you should observe `account` events in the UI.
 
 ## Next step
 
-In the [next section](../streams/streams.md), we will implement an highly scalable stream processing application using Kafka Stream.
+In the [next section](../streams/streams.md), we will implement a highly scalable stream processing application using Kafka Stream.
