@@ -15,6 +15,14 @@ Make sure you have the following toolset installed on your compute.
 
 This workshop is compatible with Windows. Just ensure you have git bash or cygwin installed on your machine. Docker Desktop for Windows is also a requirement.
 
+## Skip writing code and just write the demo
+
+This repository is intended as a hands on workshop. At any given time, you can switch the `solution` branch and run the applications without writing any code.
+
+```
+git checkout solution
+```
+
 ## Workshop Instructions
 
 * [Workshop preperation](doc/preperation/preperations.md)
@@ -22,4 +30,4 @@ This workshop is compatible with Windows. Just ensure you have git bash or cygwi
 * [Implementing a Stream Processor with Kafka Streams](doc/streams/streams.md)
 * [Enrich transaction results with ksqlDB](doc/ksqldb/ksqldb.md)
 
-Made with Love by [Daniel Lavoie](https://github.com/daniellavoie)
+Made with love by [Daniel Lavoie](https://github.com/daniellavoie)
