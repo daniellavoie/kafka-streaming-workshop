@@ -32,7 +32,7 @@ git checkout solution
  
 ## Workshop Instructions
  
-* [Workshop preparation](doc/preperation/preperations.md)
+* [Workshop preparation](doc/preparation/preparations.md)
 * [Loading referential data with Kafka Connect](doc/connector/connector-linux.md)
 * [Implementing a Stream Processor with Kafka Streams](doc/streams/streams.md)
 * [Enrich transaction results with ksqlDB](doc/ksqldb/ksqldb.md)
