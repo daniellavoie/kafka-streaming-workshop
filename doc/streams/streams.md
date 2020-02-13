@@ -170,7 +170,7 @@ From the main screen, access the topic view with the following links: `Cluster 1
 
 Click on the `transaction-success` topic and access the `messages` tab. Click on the `offset` textbox and type `0` and press enter to instruct C3 to load all messages from partition 0 starting from offset 0.
 
-With the connector running, you should observe `account` events in the UI.
+You should observe `transaction-success` events in the UI. If you can't see any message, try your lock with partition 1 starting from offset 0.
 
 ![c3-transaction-success](transaction-success.png)
 
@@ -178,7 +178,7 @@ With the connector running, you should observe `account` events in the UI.
 
 Click on the `topic` tab from the cluster navigation menu. Select the `transaction-failed` topic and access the `messages` tab. Click on the `offset` textbox and type `0` and press enter to instruct C3 to load all messages from partition 0 starting from offset 0.
 
-With the connector running, you should observe `account` events in the UI. If you can't see any message, try your lock with partition 1 starting from offset 0.
+You should observe `transaction-failed` events in the UI. If you can't see any message, try your lock with partition 1 starting from offset 0.
 
 ![c3-transaction-failed](transaction-failed.png)
 
