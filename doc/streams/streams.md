@@ -20,7 +20,7 @@ Our business requirement states that for every request we receive, we check if t
 
 The Data Generator writes transaction requests to the Kafka topic with a key equals to the account number of the transaction. As such, we have the guarantee that all messages of an account will be proccessed by a single thread for our Transaction Service no matter how many instances of it are concurrently running.
 
-Kafka Streams will not commit any message offset until it completes our business logic of managing 
+Kafka Streams will not commit any message offset until it completes our business logic of managing a transaction request.
 
 ![Transaction Service](transaction-service.png)
 
@@ -60,7 +60,7 @@ KStream<String, Transaction> transactionStream = streamsBuilder
 
 ### Leverage the Transformer to process our requests
 
-To inform Kafka Streams that we want to update the `funds` State Store for all incoming requests atomically, we can leverage the `transformValues` operator to plugin our `TransactionTransformer`. This operator requires us to specify the name of the `funds` State Store that will be used by the `Transformer`. This also Kafka Streams to keep track that events from our `transaction-request` will result in a change of state for that store.
+To inform Kafka Streams that we want to update the `funds` State Store for all incoming requests atomically, we can leverage the `transformValues` operator to plugin our `TransactionTransformer`. This operator requires us to specify the name of the `funds` State Store that will be used by the `Transformer`. This also instructs Kafka Streams to keep track of events from our `transaction-request` since they will result in a change of state for our store.
 
 ```
 KStream<String, TransactionResult> resultStream = transactionStream
